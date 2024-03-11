@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vue Hello</title>
 
+  <!-- bootstrap -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css' integrity='sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==' crossorigin='anonymous'/>
+
   <!-- css -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -17,10 +20,14 @@
   <div id="app">
 
 
-    <h4>Scrivi il tuo nome per essere salutato:</h4>
-    <input type="text" v-model="nome">
+    <div class="text-center ">
 
-    <h1> {{message}} {{nome}}</h1>
+      <h4 :class='myBGC'>Scrivi il tuo nome per essere salutato:</h4>
+      <input type="text" v-model="nome" >
+  
+      <h1> <span :class='miaClasseMessage'>{{message}}</span> <span  :class='miaClasseNome'>{{nome}}</span></h1>
+      
+    </div>
 
     <div v-html="immagine2" class="immagine2">
       <!-- <img src="{{image}}"  alt=""> -->

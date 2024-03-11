@@ -7,3 +7,16 @@
   width: 600px;
   margin: 300px auto;
 }
+.verdeScuro {
+  background-color: rgb(47, 132, 93);
+  color: white;
+  padding: 20px;
+}
+
+.verde {
+  color: rgb(67, 184, 132);
+}
+
+.blu {
+  color: rgb(77, 106, 140);
+}
