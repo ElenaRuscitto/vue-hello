@@ -23,14 +23,14 @@ createApp ({
     printDate(){
       const d =  new Date();
       const g = d.getDate() < 10 ? '0'+d.getDate() : d.getDate();
-      const m = d.getMonth() < 10 ? '0'+d.getMonth() : d.getMonth();
-      const a = d.getFullYear() < 10 ? '0'+d.getFullYear() : d.getFullYear();
-      this.displayClock = `${g}:${m}:${a}`
-    },
+      const m = d.getMonth() + 1 < 10 ? '0'+d.getMonth() : d.getMonth();
+      const a = d.getFullYear() ? '0'+d.getFullYear() : d.getFullYear();
+      this.displayData = `${g}/${m}/${a}`
+    }
   },
 
   mounted(){
-    this.printData();
+    this.printDate();
   } ,
 
 }).mount ('#app');
