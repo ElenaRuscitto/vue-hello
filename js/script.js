@@ -15,6 +15,7 @@ createApp ({
       isChange: false,
       // image: "./img/vuejs.jpg"
       immagine2: '<img src="./img/vuejs.jpg" alt="" class= "w-100">',
+      // contatore: 5,
       immagine3: 'https://c7.alamy.com/compit/2rht0h8/asp-concetto-di-business-e-teconologia-testo-su-cubi-di-legno-2rht0h8.jpg'
     }
   },
@@ -26,11 +27,16 @@ createApp ({
       const m = d.getMonth() + 1 < 10 ? '0'+(d.getMonth() + 1 ): d.getMonth() + 1;
       const a = d.getFullYear() ;
       this.displayDate = `${g}/${m}/${a}`
-    }
+    },
+
+    // timer () {
+    //   this.contatore--;
+    // }
   },
 
   mounted(){
     this.printDate();
+    this.timer();
   } ,
 
 }).mount ('#app');
