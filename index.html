@@ -18,8 +18,12 @@
 
     <h1> {{message}} {{nome}}</h1>
 
-    <div v-html="immagine2">
+    <div v-html="immagine2" class="immagine2">
       <!-- <img src="{{image}}"  alt=""> -->
+    </div> 
+
+    <div>
+      <img :src="immagine3" alt="" class="immagine3">
     </div>
 
   </div>
