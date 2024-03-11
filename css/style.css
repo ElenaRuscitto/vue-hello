@@ -1,18 +1,12 @@
-.immagine2 {
-  width: 200px;
-  height: 200px;
-}
+
 
 .immagine3 {
-  width: 600px;
-  margin: 300px auto;
+
+  margin: 0 auto;
 }
 .verdeScuro {
   background-color: rgb(47, 132, 93);
-display: flex;
-text-align: center;
-justify-content: center;
-padding: 20px;
+  padding: 20px;
 }
 
 .bianco {
