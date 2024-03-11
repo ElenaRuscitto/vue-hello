@@ -21,12 +21,15 @@
 
 
     <div class="text-center ">
-
-      <h4 :class='myBGC'>Scrivi il tuo nome per essere salutato:</h4>
+      
+      <div :class='myBGC'>
+        <h4 :class='myC'>Scrivi il tuo nome per essere salutato:</h4>
+        <div class="text-end ">{{ displayDate }}</div>
+      </div>
       <input type="text" v-model="nome" >
   
       <h1> <span :class='miaClasseMessage'>{{message}}</span> <span  :class='miaClasseNome'>{{nome}}</span></h1>
-      
+
     </div>
 
     <div v-html="immagine2" class="immagine2">

@@ -9,10 +9,15 @@
 }
 .verdeScuro {
   background-color: rgb(47, 132, 93);
-  color: white;
-  padding: 20px;
+display: flex;
+text-align: center;
+justify-content: center;
+padding: 20px;
 }
 
+.bianco {
+  color: white;
+}
 .verde {
   color: rgb(67, 184, 132);
 }
